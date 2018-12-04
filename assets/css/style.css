@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'star_nextregular';
+    src: url('star_next-webfont.woff2') format('woff2'),
+         url('star_next-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#TNG1{
+    text-align: center;
+    font-family: 'star_nextregular';
+    color: darkorange;
+   padding-top: 30px;
+}
+#TNG2{
+    text-align: center;
+    font-family: 'star_nextregular';
+    color: darkorange;
+  
+}
+
+
+
+.footer 
+{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        border-top: darkorange;
+        background-color: black ;
+        border-top-style: solid;
+        font-family: 'star_nextregular';
+        color: darkorange;
+        height: 40px;
+}
+.text-white 
+{
+    background-color: black;
+    font-family: 'star_nextregular';
+    text-align: center;
+    
+}
