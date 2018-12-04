@@ -16,6 +16,13 @@
     text-align: center;
     font-family: 'star_nextregular';
     color: darkorange;
+    letter-spacing: 4px;
+  
+}
+#TNG3{
+    text-align: center;
+    font-family: 'star_nextregular';
+    color: darkorange;
   
 }
 
@@ -28,16 +35,26 @@
         width: 100%;
         text-align: center;
         border-top: darkorange;
-        background-color: black ;
         border-top-style: solid;
         font-family: 'star_nextregular';
         color: darkorange;
         height: 40px;
 }
-.text-white 
-{
-    background-color: black;
-    font-family: 'star_nextregular';
-    text-align: center;
-    
+
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("../images/bg.png");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+   
+   
+   background-size: cover;
 }
