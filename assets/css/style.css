@@ -9,21 +9,22 @@
 #TNG1{
     text-align: center;
     font-family: 'star_nextregular';
-    color: darkorange;
-   padding-top: 30px;
+    color: rgb(0, 147, 221);
+    padding-top: 30px;
+    text-shadow: -2px 2px 3px rgb(105, 147, 199) ;
 }
 #TNG2{
     text-align: center;
     font-family: 'star_nextregular';
-    color: darkorange;
+    color: rgb(0, 147, 221);
     letter-spacing: 4px;
-  
+    text-shadow: -2px 2px 3px rgb(105, 147, 199) ;
 }
 #TNG3{
     text-align: center;
     font-family: 'star_nextregular';
-    color: darkorange;
-  
+    color: rgb(0, 147, 221);
+    text-shadow: -2px 2px 2px rgb(105, 147, 199) ;
 }
 
 
@@ -34,15 +35,16 @@
         bottom: 0;
         width: 100%;
         text-align: center;
-        border-top: darkorange;
+        border-top:rgb(0, 147, 221);
         border-top-style: solid;
         font-family: 'star_nextregular';
-        color: darkorange;
+        color: rgb(0, 147, 221);
         height: 40px;
 }
 
 body, html {
     height: 100%;
+    color:white;
 }
 
 .bg { 
@@ -56,5 +58,5 @@ body, html {
     background-position: center;
    
    
-   background-size: cover;
+    background-size: cover;
 }
