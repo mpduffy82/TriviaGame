@@ -38,8 +38,6 @@
 .container{
     text-align: center;
 }
-
-
 .footer 
 {
         position: fixed;
@@ -74,6 +72,7 @@ body, html {
     color: rgb(0, 147, 221);
     font-family: 'crilleemedium';
     text-shadow: -1px 1px 1px black;
-    background-color: white;
-    
+    background-color: #CCDDFF;
+    border-style: solid;
+    border-color:rgb(0, 147, 221);
 }

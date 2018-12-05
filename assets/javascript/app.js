@@ -33,5 +33,175 @@ const myQuestions = [
 		d: "Minding his own business, so stop asking"
 	  },
 	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
+	},
+	{
+	  question: "Where is Waldo really?",
+	  answers: {
+		a: "Antarctica",
+		b: "Exploring the Pacific Ocean",
+		c: "Sitting in a tree",
+		d: "Minding his own business, so stop asking"
+	  },
+	  correctAnswer: "d"
 	}
   ];
