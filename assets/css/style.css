@@ -75,7 +75,5 @@ body, html {
     font-family: 'crilleemedium';
     text-shadow: -1px 1px 1px black;
     background-color: white;
-    background-image: url("../images/enterprise.jpg");
-    background-size: 60pc;
-    background-position: center;
+    
 }
