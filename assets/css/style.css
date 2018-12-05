@@ -78,3 +78,12 @@ body, html {
     border-style: solid;
     border-color:rgb(0, 147, 221);
 }
+.btn-danger{
+    font-family: 'crilleemedium';
+    text-shadow: -1px 1px 1px black;
+}
+.btn-warning{
+    font-family: 'crilleemedium';
+    text-shadow: -1px 1px 1px black;
+    color:white;
+}
