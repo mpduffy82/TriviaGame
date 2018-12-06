@@ -9,29 +9,25 @@
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 <body>
-<div class="bg">
+	<div class="bg">
 		<div class="container">    
 				<h1 id="TNG1">STAR TREK</h1>
     			<h2 id="TNG2">THE NEXT GENERATION</h2>
     			<h3 id="TNG3">Trivia Game</h3>
-			<div class="jumbotron">
-				
-					<div id= "timeleft"></div>
-					<div id= "questionblock"></div>
-					<div id= "answerblock"></div>
-						<button class ="btn btn-danger" id ="start">Engage!</button><br>
-						<button class="btn btn-warning" id="reset">Play Again?</button>
-				
+					<div class="jumbotron">
+								<div id= "timer"><h3>Seconds Remaining: 20</h3></div>
+								<div id= "questionsGoHere"></div>
+								<div id= "answersGoHere"></div>
+									<button class ="btn btn-danger" id ="start">Engage!</button><br>
+									<button class="btn btn-warning" id="reset">Play Again?</button>
+								<div id= "picturesGoHere"></div>	
+					</div>
 		</div>
-</div>
-<footer class="footer">
-		<div class="container">
-		<span class="text">Copyright "MAKE IT SO INDUSTRIES" Stardate 2018 ©</span>
-		</div>
-</footer> 
-</div>
+		<footer class="footer">
+			<div class="container">
+				<span class="text">Copyright "MAKE IT SO INDUSTRIES" Stardate 2018 ©</span>
+			</div>
+		</footer> 
+	</div>
 </body>             
 </html>
-<script>
-displayStart()
-</script>

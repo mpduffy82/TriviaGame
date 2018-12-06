@@ -73,8 +73,8 @@ body, html {
 .jumbotron{
     color: rgb(0, 147, 221);
     font-family: 'crilleemedium';
-    text-shadow: -1px 1px 1px black;
-    background-color: rgb(255,255,255, .7);
+    
+    background-color: rgb(0, 0, 0, 0.4);
     border-style: solid;
     border-color:rgb(0, 147, 221);
 }
@@ -86,4 +86,22 @@ body, html {
     font-family: 'crilleemedium';
     text-shadow: -1px 1px 1px black;
     color:white;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active  {
+    text-shadow: -1px 1px 1px black;
+    color:white;}
+#timer{
+    color: #CC6666;
+    padding-bottom:20px;
+}
+#answersGoHere{
+    color: #FF9900;
+    
+}
+#questionsGoHere{
+    padding-bottom: 20px;
+}
+#picturesGoHere{
+    width:100px;
+    height: auto;
 }
