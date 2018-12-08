@@ -40,6 +40,7 @@
 }
 .container{
     text-align: center;
+    overflow: hidden;
 }
 .footer 
 {
@@ -50,26 +51,31 @@
         font-family: 'crilleemedium';
         color: rgb(0, 147, 221);
         height: 40px;
-       
+        overflow: hidden;
 }
 
 body, html {
     height: 100%;
     color:white;
+    
+    overflow: hidden;
+      
 }
 
 .bg { 
     /* The image used */
     background-image: url("../images/bg.png");
-    background-repeat:repeat-y;
+    
+    
     /* Full height */
-    height: 110%; 
-
+    height: 100%; 
+    overflow: hidden;
     /* Center and scale the image nicely */
-    background-position: middle;
+    background-position: center;
    
    
     background-size: cover;
+    background-repeat:repeat; 
 }
 .container-1{
     color: rgb(0, 147, 221);

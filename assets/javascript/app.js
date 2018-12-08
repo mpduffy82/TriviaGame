@@ -75,7 +75,7 @@ $(document).ready(function () {
 		//timer countdown
 		function decrement() {
 			timer --;
-			$("#timer").html("<h3>Seconds Remaining:"+timer+"</h3>");
+			$("#timer").html("<h3>Seconds Remaining: "+timer+"</h3>");
 			
 		
 			//stop timer if reach 0
@@ -147,7 +147,7 @@ $(document).ready(function () {
 			//run the score screen if all questions answered
 			if ((incorrectCount + correctCount + unansweredCount) === questionCount) {
 				$("#questionsGoHere").empty();
-				$("#questionsGoHere").html("<h3>Game Over!  Here's how you did: </h3>");
+				$("#questionsGoHere").html("<h3>Mission Over!  Here's how you fared: </h3>");
 				$("#answersGoHere").append("<h4> Correct: " + correctCount + "</h4>" );
 				$("#answersGoHere").append("<h4> Incorrect: " + incorrectCount + "</h4>" );
 				$("#answersGoHere").append("<h4> Unanswered: " + unansweredCount + "</h4>" );
