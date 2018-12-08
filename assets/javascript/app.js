@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	var options = [
-		{
-			question: `"Star Trek, The Next Generation", takes us 99 years into the future after the original "Star Trek" television series finished. Who was in the captain's chair for this second series of the "Star Trek" franchise?`, 
+		{ //this was the best way I could find to format the questions, answer, and image in the same var.
+			question: `Who was in the captain's chair in "Star Trek, The Next Generation"?`, 
 			choice: ["Benjamin Sisko", "Kathryn Janeway", "Jonathan Archer", "Jean-Luc Picard"],
 			answer: 3,
 			photo: "./assets/images/picard.gif"
@@ -31,15 +31,37 @@ $(document).ready(function () {
 			photo: "./assets/images/guinan.gif"
 		}, 
 		{
-			question: "Who is the cheif engineer of the USS Enterprise?", 
+			question: "Who is the chief engineer of the USS Enterprise?", 
 			choice: ["Giordi La Forge", "Montgomery Scott", "Miles O'Brien", "Paul Stamets" ],
 			answer: 0,
 			photo: "./assets/images/giordi.gif"
 		}, 
 		{
-			question: `Jean-Luc Picard referred to which godlike character when he said this ""He's devious and amoral and unreliable and irresponsible and... and definitely not to be trusted."`,
+			question: `Jean-Luc Picard referred to which godlike character when he said this "He's devious and amoral and unreliable and irresponsible and... and definitely not to be trusted."`,
 			choice: ["Doctor Who", "Zeus", "Riker", "Q" ],
 			answer: 3,
-			photo: "./assets/images/q.gif"
-		}];
-		
+			photo: "./assets/images/007.gif"
+		},];
+		var correctCount = 0;
+		var incorrectCount = 0;
+		var unansweredCount = 0;
+		var timer = 20;
+		var intervalId;
+		var userGuess ="";
+		var running = false;
+		var qCount = options.length;
+		var pick;
+		var index;
+		var newArray = [];
+		var holder = [];
+		$("#reset").hide();
+		//click start button to begin the quiz
+		$("#start").on("click", function () {
+			
+				$("#start").hide();
+				displayQuestion();
+				runTimer();
+				for(var i = 0; i < options.length; i++) {
+			holder.push(options[i]);
+		}
+			}
