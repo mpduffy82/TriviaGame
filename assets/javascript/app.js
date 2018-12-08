@@ -166,7 +166,20 @@ $(document).ready(function () {
 			}, 3500);
 				
 		
-		}	})
+		}	
 		
-	
+		$("#reset").on("click", function() {
+			$("#reset").hide();
+			$("#answersGoHere").empty();
+			$("#questionsGoHere").empty();
+			$("#timer").html("<h3>Seconds Remaining: 20</h3>");
+			for(var i = 0; i < holder.length; i++) {
+				options.push(holder[i]);
+			}
+			runTimer();
+			displayQuestion();
+		
+		})
+		
+		})	
 		
