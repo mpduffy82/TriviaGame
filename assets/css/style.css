@@ -41,6 +41,7 @@
 .container{
     text-align: center;
     overflow: hidden;
+    
 }
 .footer 
 {
@@ -106,9 +107,12 @@ body, html {
 #answersGoHere{
     color: #FF9900;
     /* padding-bottom:20px; */
+
 }
 #questionsGoHere{
     padding-bottom: 40px;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 /* the 2 classes below make the highlighted question light up with a blue background; */
