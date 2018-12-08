@@ -28,13 +28,14 @@
     color: rgb(0, 147, 221);
     letter-spacing: 4px;
     text-shadow: -2.5px 2.5px 3px rgb(149, 196, 253) ;
+    padding-bottom: 25px;
 }
 #TNG3{
     text-align: center;
     font-family: 'star_nextregular';
     color: rgb(0, 147, 221);
     text-shadow: -2px 2.5px 3px rgb(149, 196, 253) ;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
 
 }
 .container{
@@ -60,23 +61,24 @@ body, html {
 .bg { 
     /* The image used */
     background-image: url("../images/bg.png");
-
+    background-repeat:repeat-y;
     /* Full height */
-    height: 100%; 
+    height: 110%; 
 
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: middle;
    
    
     background-size: cover;
 }
-.jumbotron{
+.container-1{
     color: rgb(0, 147, 221);
     font-family: 'crilleemedium';
     
     background-color: rgb(0, 0, 0, 0.4);
     border-style: solid;
     border-color:rgb(0, 147, 221);
+    padding-block-end: 20px;
 }
 .btn-danger{
     font-family: 'crilleemedium';
@@ -93,11 +95,19 @@ body, html {
 #timer{
     color: #CC6666;
     padding-bottom:20px;
+    padding-top:20px;
 }
 #answersGoHere{
     color: #FF9900;
-    
+    /* padding-bottom:20px; */
 }
 #questionsGoHere{
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
+
+/* the 2 classes below make the highlighted question light up with a blue background; */
+.answerchoice:hover{
+    background-color: #3366CC;
+}
+.data-guessvalue:hover{
+    background-color: #3366CC;}

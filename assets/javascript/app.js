@@ -135,3 +135,38 @@ $(document).ready(function () {
 			}
 		})
 		}
+		function hidepicture () {//shows a picture. notice how I sized it here because changing it in css was not working
+			$("#answersGoHere").append(`<br><img height="200px" src=` + pick.photo + `>`);
+			newArray.push(pick);
+			options.splice(index,1);
+			 
+			setTimeout(function() {
+				$("#answersGoHere").empty();
+				timer= 20;
+		
+			//run the score screen if all questions answered
+			if ((incorrectCount + correctCount + unansweredCount) === questionCount) {
+				$("#questionsGoHere").empty();
+				$("#questionsGoHere").html("<h3>Game Over!  Here's how you did: </h3>");
+				$("#answersGoHere").append("<h4> Correct: " + correctCount + "</h4>" );
+				$("#answersGoHere").append("<h4> Incorrect: " + incorrectCount + "</h4>" );
+				$("#answersGoHere").append("<h4> Unanswered: " + unansweredCount + "</h4>" );
+				
+				$("#reset").show();
+				correctCount = 0;
+				incorrectCount = 0;
+				unansweredCount = 0;
+		
+			} else {
+				runTimer();
+				displayQuestion();
+				$("#timer").html("<h3>Seconds Remaining: 20</h3>");	
+			}  //  above: shows 20 seconds instead of 19 when starting the count
+			//below: is the time between questions.
+			}, 3500);
+				
+		
+		}	})
+		
+	
+		
