@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	var options = [
-		{ //this was the best way I could find to format the questions, answer, and image in the same var.
+		{
 			question: `Who was in the captain's chair in "Star Trek, The Next Generation"?`, 
 			choice: ["Benjamin Sisko", "Kathryn Janeway", "Jonathan Archer", "Jean-Luc Picard"],
 			answer: 3,
@@ -46,16 +46,16 @@ $(document).ready(function () {
 		var incorrectCount = 0;
 		var unansweredCount = 0;
 		var timer = 20;
-		var intervalId;
+		var intervalValue;
 		var userGuess ="";
 		var running = false;
-		var qCount = options.length;
+		var questionCount = options.length;
 		var pick;
 		var index;
 		var newArray = [];
 		var holder = [];
 		$("#reset").hide();
-		//click start button to begin the quiz
+		//click start button to start game
 		$("#start").on("click", function () {
 			
 				$("#start").hide();
@@ -64,4 +64,74 @@ $(document).ready(function () {
 				for(var i = 0; i < options.length; i++) {
 			holder.push(options[i]);
 		}
+			})
+		//timer start
+		function runTimer(){
+			if (!running) {
+			intervalValue = setInterval(decrement, 1000); 
+			running = true;
 			}
+		}
+		//timer countdown
+		function decrement() {
+			timer --;
+			$("#timer").html("<h3>Seconds Remaining:"+timer+"</h3>");
+			
+		
+			//stop timer if reach 0
+			if (timer === 0) {
+				unansweredCount++;
+				stop();
+				$("#answersGoHere").html("<h3>Time is up! The correct answer is: " + pick.choice[pick.answer] + "</h3>");
+				hidepicture();
+			}	
+		}
+		
+		//timer stop
+		function stop() {
+			running = false;
+			clearInterval(intervalValue);
+		}
+		//randomly pick question in array if not already shown  {{{{THIS WAS Really hard to do }}}}
+		//below displays a question and lower down answers
+		function displayQuestion() {
+			//generate random index in array
+			index = Math.floor(Math.random()*options.length);
+			pick = options[index];
+		
+		
+				$("#questionsGoHere").html("<h2>" + pick.question + "</h2>");
+				for(var i = 0; i < pick.choice.length; i++) {
+					var userChoice = $("<div>");
+					userChoice.addClass("answerchoice");
+					userChoice.html("<h2>" +pick.choice[i]+ "</h2>");
+					//assign array position to it so can check answer ----this is important
+					userChoice.attr("data-guessvalue", i);
+					$("#answersGoHere").append(userChoice);
+	
+		}
+		
+		
+		
+		//click function to select answer and outcomes
+		$(".answerchoice").on("click", function () {
+			//grab array position from userGuess
+			userGuess = parseInt($(this).attr("data-guessvalue"));
+		
+			//checks if user got the correct answer and adds to the correctCount
+			if (userGuess === pick.answer) {
+				stop();
+				correctCount++;
+				userGuess="";
+				$("#answersGoHere").html("<h3>Correct!</h3>");
+				hidepicture();
+		//checks if user got the wrong answer and adds to the incorrectCount 
+			} else {
+				stop();
+				incorrectCount++;
+				userGuess="";
+				$("#answersGoHere").html(`<h3>Incorrect! "resistance is futile" The correct answer is: ` +pick.choice[pick.answer]+ `</h3>`);
+				hidepicture();
+			}
+		})
+		}
